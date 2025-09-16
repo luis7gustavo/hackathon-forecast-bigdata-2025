@@ -1,0 +1,31 @@
+BI-LSTM MODEL RESULTS
+====================
+
+1. MODEL ARCHITECTURE
+   - Type: Bidirectional LSTM (Bi-LSTM)
+   - Input Shape: (7, 31)
+   - Layers: 2 Bi-LSTM layers + Dense output layer
+   - Parameters: Tanh activation, Adam optimizer
+
+2. TRAINING INFORMATION
+   - Training samples: 195151
+   - Test samples: 48788
+   - Final training loss: 1.2234
+   - Final validation loss: 1.3179
+
+3. PERFORMANCE METRICS
+   - Mean Squared Error (MSE): 1.3177
+   - Root Mean Squared Error (RMSE): 1.1479
+   - Mean Absolute Error (MAE): 0.8099
+   - R-squared (R²): -0.0011
+
+4. FORECAST SUMMARY
+   - Generated 30 future predictions
+   - Average forecast value: 0.4759
+   - Forecast range: 0.3922 to 0.5217
+
+5. CONCLUSION
+   - The Bi-LSTM model shows limited predictive performance
+   - The bidirectional architecture helps capture both past and future dependencies
+   - Time-based patterns in transaction data are effectively modeled
+   - Consider feature importance analysis to further improve performance

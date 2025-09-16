@@ -1,0 +1,35 @@
+ANÁLISE EXPLORATÓRIA DE DADOS DE TRANSAÇÕES
+=========================================
+
+1. RESUMO GERAL DOS DADOS
+   - Número total de transações: 243946
+   - Período: 2022-01-01 a 2022-12-31
+   - Valor líquido total: R$ 14,516,817.12
+   - Lucro bruto total: R$ 3,828,611.76
+
+2. PADRÕES TEMPORAIS
+   - Mês com mais transações: 2022-09
+   - Mês com maior valor total: 2022-09
+   - Observa-se um padrão semanal claro nas transações
+
+3. DISTRIBUIDORES
+   - Distribuidor com mais transações: ID 4
+   - Distribuidor com maior valor médio: ID 11
+
+4. CORRELAÇÕES
+   - Correlações mais fortes:
+     * valor_bruto e valor_liquido: 0.997
+     * valor_bruto e lucro_bruto: 0.913
+     * valor_bruto e outlier_score: -0.883
+     * valor_liquido e lucro_bruto: 0.913
+     * valor_liquido e outlier_score: -0.862
+
+5. OUTLIERS
+   - Todos os registros têm o mesmo valor de outlier_flag: 1
+   - Range de outlier_score: 0.0000 a 0.1862
+
+6. INSIGHTS PARA O MODELO LSTM
+   - Dados temporais apresentam padrões semanais que podem ser capturados pelo modelo
+   - Forte correlação entre valor_bruto e valor_liquido sugere que um pode ser previsto a partir do outro
+   - Diferentes distribuidores têm perfis distintos que devem ser considerados no modelo
+   - Os outliers identificados devem ser tratados com cuidado no processo de modelagem
