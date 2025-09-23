@@ -9,8 +9,8 @@
 ### Installation
 Clone this repository:
 ```bash
-git clone https://github.com/PedroRebello1/retail-sales-forecast.git
-cd retail-sales-forecast
+git clone https://github.com/luis7gustavo/hackathon-forecast-bigdata-2025.git
+cd hackathon-forecast-bigdata-2025
 ```
 
 Install required dependencies:
@@ -108,4 +108,5 @@ Model performance is evaluated using:
 ---
 
 ## 📝 License
+
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
